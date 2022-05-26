@@ -4,16 +4,16 @@ puts 'Какая у Вас на руках валюта?
 a = gets.chomp
 if a == '2'
   puts 'Сколько сейчас стоит 1 доллар?'
-  howcostusd = gets.chomp.to_f
+  how_cost_usd = gets.chomp.to_f
   puts 'Сколько у Вас долларов?'
-  haveusd = gets.chomp.to_f
-  kursusd = (haveusd*howcostusd).round(2)
-  puts 'Ваши запасы на сегодня равны' + kursusd.to_s + 'гривень'
+  have_usd = gets.chomp.to_f
+  usd_exchange_rate = (have_usd * how_cost_usd).round(2)
+  puts 'Ваши запасы на сегодня равны ' + usd_exchange_rate.to_s + ' гривень'
 else
   puts 'Сколько сейчас стоит 1 гривня?'
-  howcostgrn = gets.chomp.to_f
+  how_cost_uah = gets.chomp.to_f
   puts 'Сколько у Вас гривень?'
-  havegrn = gets.chomp.to_f
-  kursgrn = (havegrn*howcostgrn).round(2)
-  puts 'Ваши запасы на сегодня равны' + kursgrn.to_s + '$'
+  have_uah = gets.chomp.to_f
+  uah_exchange_rate = (have_uah * how_cost_uah).round(2)
+  puts 'Ваши запасы на сегодня равны ' + uah_exchange_rate.to_s + ' $'
 end

@@ -6,7 +6,6 @@ c = gets.chomp.to_i
 if b == c
   abort 'Ура, вы выиграли!'
 else
-
   if c > b
     puts 'Нужно меньше'
   else
@@ -22,7 +21,7 @@ end
 
 c = gets.chomp.to_i
 if b == c
-    abort 'Ура, вы выиграли!'
+  abort 'Ура, вы выиграли!'
 else
 
   if c > b
@@ -49,7 +48,7 @@ else
     puts 'Нужно больше'
   end
 
-  if (c - b).abs<3
+  if (c - b).abs < 3
     puts 'Тепло'
   else
     puts 'Холодно'
