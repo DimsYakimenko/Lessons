@@ -1,11 +1,11 @@
 puts 'Мужские имена: '
-manname = ['Alex', 'Georg', 'Artem']
-puts manname.to_s
+men_names = ['Alex', 'Georg', 'Artem']
+puts men_names.to_s
 
 puts 'Женсике имена: '
-woomenname = ['Alina', 'Alla', 'Inna']
-puts woomenname.to_s
+women_names = ['Alina', 'Alla', 'Inna']
+puts women_names.to_s
 
-names = manname + woomenname
+names = men_names + women_names
 puts 'Все имена:'
 puts names.to_s

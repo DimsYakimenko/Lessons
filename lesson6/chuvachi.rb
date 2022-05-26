@@ -9,34 +9,41 @@ else
   puts 'Вы выбрали: ' + vibor[vveli]
 end
 
-comp = vibor.sample
-puts 'Компьютер выбрал:' + comp
+computer_choice = vibor.sample
+user_choice = vibor[vveli]
+puts 'Компьютер выбрал:' + computer_choice
 
-if
-vibor[vveli] == comp
-puts 'Ничья'
+if user_choice == computer_choice
+  puts 'Ничья'
+  exit
 end
 
-if vibor[vveli] == 'камень' && comp == 'ножницы'
-  puts 'Вы победили'
+if user_choice == 'камень'
+  if computer_choice == 'ножницы'
+    puts 'Вы победили'
+  end
+
+  if computer_choice == 'бумага'
+    puts 'Вы проиграли'
+  end
 end
 
-if vibor[vveli] == 'камень' && comp == 'бумага'
-  puts 'Вы проиграли'
+if user_choice == 'ножницы'
+  if computer_choice == 'камень'
+    puts 'Вы проиграли'
+  end
+
+  if computer_choice == 'бумага'
+    puts 'Вы победили'
+  end
 end
 
-if vibor[vveli] == 'ножницы' && comp == 'камень'
-  puts 'Вы проиграли'
-end
+if user_choice == 'бумага'
+  if computer_choice == 'камень'
+    puts 'Вы победили'
+  end
 
-if vibor[vveli] == 'ножницы' && comp == 'бумага'
-  puts 'Вы победили'
-end
-
-if vibor[vveli] == 'бумага' && comp == 'камень'
-  puts 'Вы победили'
-end
-
-if vibor[vveli] == 'бумага' && comp == 'ножницы'
-  puts 'Вы проиграли'
+  if computer_choice == 'ножницы'
+    puts 'Вы проиграли'
+  end
 end
