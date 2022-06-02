@@ -1,9 +1,10 @@
 def sklonenie(number, krokodil, krokodila, krokodilov)
   if number == nil || !number.is_a?(Numeric)
     number = 0
-    if number == 11 || number == 12 || number == 13 || number == 14
-      number = 5
-    end
+  end
+
+  if number % 100 == 11 || number % 100 == 12 || number % 100 == 13 || number % 100 == 14
+    return krokodilov
   end
 
   ostatok = number % 10
