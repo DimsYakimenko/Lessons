@@ -1,7 +1,7 @@
 array = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
 comp_choice = array.sample
 
-def condition number, comp
+def condition(number, comp)
 
   if comp == number
     abort 'Ура, вы выиграли!'
@@ -18,9 +18,7 @@ def condition number, comp
     else
       puts 'Холодно'
     end
-
   end
-
 end
 
 puts 'Загадно число от 0 до 16, отгадай какое.'
