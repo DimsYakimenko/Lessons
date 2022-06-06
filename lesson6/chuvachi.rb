@@ -1,16 +1,16 @@
-vibor = ['камень', 'ножницы', 'бумага']
+data = ['камень', 'ножницы', 'бумага']
 puts 'Игра называется: Камень, ножницы, бумага.
 Введите свой вариант: 0 - камень, 1 - ножницы, 2 - бумага'
-vveli = gets.chomp.to_i
+input = gets.chomp.to_i
 
-if vveli > 2 or vveli < 0
+if input > 2 or input < 0
   abort 'Вы сделали неккоректный выбор'
 else
-  puts 'Вы выбрали: ' + vibor[vveli]
+  puts 'Вы выбрали: ' + data[input]
 end
 
-computer_choice = vibor.sample
-user_choice = vibor[vveli]
+computer_choice = data.sample
+user_choice = data[input]
 puts 'Компьютер выбрал:' + computer_choice
 
 if user_choice == computer_choice
