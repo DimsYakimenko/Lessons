@@ -5,7 +5,7 @@ def stars number
   shoulder_straps = ""
   while count <= number do
     shoulder_straps += '*'
-      count += 1
+    count += 1
   end
   puts shoulder_straps
 end
