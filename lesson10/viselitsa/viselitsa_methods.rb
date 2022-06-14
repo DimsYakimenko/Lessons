@@ -3,14 +3,14 @@ def cls
 end
 
 def get_letters
-  slovo = ARGV[0]
+  word = ARGV[0]
 
-  if slovo == nil || slovo == ''
+  if word == nil || word.to_s == ''
     abort 'Для игры введите загаданное слово в качестве аргумента при ' \
       'запуске программы'
   end
 
-  secret_word = slovo.split('')
+  secret_word = word.split('')
 
   while secret_word.index('ё') != nil do
     secret_word[secret_word.index('ё')] = 'е'
@@ -20,7 +20,7 @@ def get_letters
     secret_word[secret_word.index('й')] = 'и'
   end
 
-  return secret_word
+  secret_word
 end
 
 def get_user_input
@@ -36,7 +36,7 @@ def get_user_input
     letter = 'и'
   end
 
-  return letter
+  letter
 end
 
 def check_result(user_input, letters, good_letters, bad_letters)
@@ -47,13 +47,13 @@ def check_result(user_input, letters, good_letters, bad_letters)
   if letters.include? user_input
     good_letters << user_input
     if good_letters.uniq.sort == letters.uniq.sort
-      return 1
+      1
     else
-      return 0
+      0
     end
   else
     bad_letters << user_input
-    return -1
+      -1
   end
 end
 
