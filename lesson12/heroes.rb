@@ -1,12 +1,13 @@
 puts 'Врага какого персонажа вы хотите узнать?'
-hero = gets.chomp
+hero = gets.chomp.downcase
+
 case hero
-when 'Буратино', 'буратино', 'Buratino'
-puts 'Карабас-Барабас'
-when 'Фродо Бэггинс', 'Фродо', 'Бэггинс ', 'Frodo', 'frodo', 'Begins', 'begins', 'фродо', 'бэггинс', 'фродо бэггинс'
-puts 'Саурон'
-when 'Моцарт', 'Mocart', 'mocart', 'моцарт'
-puts 'Сальери'
-else
-puts 'Не удалось найти врага'
+  when 'буратино', 'buratino'
+    puts 'Карабас-Барабас'
+  when 'frodo', 'begins', 'фродо', 'бэггинс', 'фродо бэггинс'
+    puts 'Саурон'
+  when 'mocart', 'моцарт'
+    puts 'Сальери'
+  else
+    puts 'Не удалось найти врага'
 end
