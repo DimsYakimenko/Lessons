@@ -41,10 +41,10 @@ end
 
 
 puts 'Первый Бодибилдер:'
-body_builder_1.show_muscles
+puts body_builder_1.show_muscles
 
 puts 'Второй Бодибилдер:'
-body_builder_2.show_muscles
+puts body_builder_2.show_muscles
 
 puts 'Третий Бодибилдер:'
-body_builder_3.show_muscles
+puts body_builder_3.show_muscles

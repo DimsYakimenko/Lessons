@@ -1,8 +1,8 @@
 class Person
   def initialize (first_name, middle_name, age)
-  @first_name = first_name
-  @middle_name = middle_name
-  @age = age
+    @first_name = first_name
+    @middle_name = middle_name
+    @age = age
   end
 
   def old?

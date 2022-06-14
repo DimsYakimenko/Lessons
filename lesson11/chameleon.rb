@@ -1,5 +1,5 @@
 require './chameleonclass.rb'
 cham = Chameleo.new
-cham.col
-cham.col
-cham.col
+cham.color
+cham.color
+cham.color
