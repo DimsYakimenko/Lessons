@@ -10,7 +10,7 @@ for item in content do
     count += 1
   end
 end
-puts "Пустых строк: #{count}"
 
+puts "Пустых строк: #{count}"
 puts 'Последние 5 строк в файле:'
 puts content.last(5)
