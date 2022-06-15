@@ -1,5 +1,6 @@
 file = File.new("./data/text.txt")
 content = file.readlines
+file.close
 puts "Всего строк: #{content.size}"
 
 count = 0
