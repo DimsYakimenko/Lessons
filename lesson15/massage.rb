@@ -1,7 +1,7 @@
 require 'pony'
 require 'io/console'
 
-my_mail = '<you username>@mail.ru'
+my_mail = '<yakimenkodims@gmail.com'
 
 puts 'Какая тема письма?'
 subject =  STDIN.gets.chomp
@@ -22,14 +22,13 @@ Pony.mail(
   from: my_mail,
   via: :smtp,
   via_options: {
-    address: 'smtp.mail.ru',
+    address:'smtp.gmail.com',
     port: '465',
     tls: true,
     user_name: my_mail,
     password: password,
     authentication: :plain
   }
-
 )
 
 puts 'Письмо отправлено!'
